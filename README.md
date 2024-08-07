@@ -9,13 +9,10 @@ To get started with this project, follow these steps:
 
 1. **Initialize the Project**
 
-   Run `npm init` in your project directory to generate a `package.json` file.
+   Run `npm install` in your project directory to download dependencies in `package.json` file.
 
-2. **Install Webpack**
-
-Run the following command to install Webpack and Webpack CLI:
-npm install webpack webpack-cli --save-dev
-
+2. **Run Project**
+   
 Run the following command to build your project:
 npx webpack
 
