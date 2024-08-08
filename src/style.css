@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: 1em;
 }
 .svg{
     width: 40px;
