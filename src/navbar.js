@@ -14,8 +14,8 @@ export default function navBar(){
     ingredients and a blend of savory flavors. From rich broths to perfectly 
     cooked noodles, each bowl is a testament to the art of ramen making. 
     Experience comfort and culinary excellence, delivered straight to your table.*/ 
-    
+
     logoContainer.append(h1,myIcon);
     navBar.append(logoContainer);
-    return navBar;
+    return document.body.appendChild(navBar);
 }

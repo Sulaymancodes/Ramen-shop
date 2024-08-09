@@ -3,28 +3,54 @@
     margin: 0;
 }
 :root{
-    --color-white: #fff;
-    --color-grey1: #e5e5e5;
+    --background-color: #e7e5e4;
+    --color-one: #3a3939;
 }
 body{
-    background-color: var(--color-white);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header{
+nav{
     padding: 10px 0;
 }
 .content{
-    background-color: var(--color-grey1);
     padding: 10px;
-    color: cyan;
 }
 .logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 2em;
+}
+h1{
+    color: #1d1c1c;
 }
 .svg{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+}
+.links-container{
+    display: flex;
+    background-color: #222222d2;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;   
+    justify-content: space-between;
+}
+button{
+    width: 18%;
+    padding: 20px;
+    background-color: #2b2b2bcc;
+    border: none;
+    color: #e4e4e4;
+    border-radius: 10px;
+    border: 1px solid #525151d2;
+
+}
+.contact-btn{
+    background-color: #fee66c;
+    color: #222;
 }

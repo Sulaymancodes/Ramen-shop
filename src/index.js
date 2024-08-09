@@ -1,5 +1,8 @@
 import navBar from './navbar.js';
+import linksContainer from './linksBar.js';
 import './style.css';
 
  
-document.body.appendChild(navBar());
+navBar();
+linksContainer();
+
