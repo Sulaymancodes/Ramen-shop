@@ -1,4 +1,5 @@
 export default function links(){
+    const navBar = document.querySelector('nav');
     const linksContainer =  document.createElement('div');
     linksContainer.classList.add('links-container');
     const homeBtn = document.createElement('button');
@@ -15,8 +16,8 @@ export default function links(){
     contactBtn.classList.add('contact-btn');
 
     linksContainer.append(homeBtn,menuBtn,aboutBtn,shopBtn,contactBtn);
-
-    return document.body.appendChild(linksContainer);
+    navBar.appendChild(linksContainer)
+    return navBar;
 
 
 }
