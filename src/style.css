@@ -2,6 +2,12 @@
     box-sizing: border-box;
     margin: 0;
 }
+@font-face {
+    font-family: 'MyFont';
+    src: url('./gang-of-three-cufonfonts/go3v2.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+  }
 :root{
     --background-color: #f1c4948e;
     --color-one: #3a3939;
@@ -9,7 +15,7 @@
 body{
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='grey' font-size='20'>ラーメン丼</text></svg>");
     background-color: var(--background-color);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'MyFont';
 }
 
 nav{
