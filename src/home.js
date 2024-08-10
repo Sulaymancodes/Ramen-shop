@@ -14,6 +14,7 @@ export default function home(){
 
     ramenIconContainer.appendChild(ramenIcon);
     homeContainer.append(ramenIconContainer,ramenInfo);
+    contentDiv.innerHTML = '';
     contentDiv.appendChild(homeContainer);
 
     return contentDiv;

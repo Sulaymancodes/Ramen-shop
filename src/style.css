@@ -3,7 +3,7 @@
     margin: 0;
 }
 :root{
-    --background-color: #f1c494;
+    --background-color: #f1c4948e;
     --color-one: #3a3939;
 }
 body{
@@ -75,7 +75,7 @@ button:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: #ffe2c2;
     border-radius: 10px;
 }
 .home-info{
@@ -83,4 +83,32 @@ button:hover{
 }
 
 /*menu container*/
+.menu-container{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    width: 70%;
+    margin: 0 auto;
 
+}
+.egg-container,
+.gyoza-container,
+.naruto-container,
+.noodles-container,
+.sushi-container,
+.yakitori-container{
+    background-color: #f1c494;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.egg-image,
+.gyoza-image,
+.naruto-image,
+.noodles-image,
+.sushi-image,
+.yakitori-image{
+    width: 80px;
+    height: 80px;
+}

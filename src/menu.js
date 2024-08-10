@@ -8,6 +8,7 @@ import yakitori from './images/yakitori-skewered-chicken-grilled-japanese-satay-
 export default function menu(){
     const contentDiv = document.querySelector('#content');
     const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-container');
     const eggContainer =  document.createElement('div');
     eggContainer.classList.add('egg-container');
     const gyozaContainer =  document.createElement('div');
@@ -24,18 +25,31 @@ export default function menu(){
 
     const eggImage = new Image();
     eggImage.src = egg;
+    eggImage.classList.add('egg-image');
     const gyozaImage = new Image();
     gyozaImage.src = gyoza;
+    gyozaImage.classList.add('gyoza-image');
     const narutoImage = new Image();
     narutoImage.src = naruto;
+    narutoImage.classList.add('naruto-image');
     const noodlesImage = new Image();
     noodlesImage.src = noodles;
+    noodlesImage.classList.add('noodles-image');
     const sushiImage = new Image();
     sushiImage.src = sushi;
+    sushiImage.classList.add('sushi-image');
     const yakitoriImage = new Image();
     yakitoriImage.src = yakitori;
+    yakitoriImage.classList.add('yakitori-image');
 
-    menuContainer.append(eggImage,gyozaImage,narutoImage,noodlesImage,sushiImage,yakitoriImage);
+    eggContainer.appendChild(eggImage);
+    gyozaContainer.appendChild(gyozaImage);
+    narutoContainer.appendChild(narutoImage);
+    sushiContainer.appendChild(sushiImage);
+    noodlesContainer.appendChild(noodlesImage);
+    yakitoriContainer.appendChild(yakitoriImage);
+
+    menuContainer.append(noodlesContainer,gyozaContainer,narutoContainer,eggContainer,sushiContainer,yakitoriContainer);
     contentDiv.innerHTML = '';
     contentDiv.appendChild(menuContainer);
     return contentDiv;

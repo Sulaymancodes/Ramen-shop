@@ -29,4 +29,5 @@ contactBtn.classList.add('contact-btn');
 linksContainer.append(homeBtn,menuBtn,aboutBtn,shopBtn,contactBtn);
 navBar.appendChild(linksContainer)
 
-menuBtn.addEventListener('click',menu)
+menuBtn.addEventListener('click',menu);
+homeBtn.addEventListener('click',home);
